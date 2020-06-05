@@ -39,32 +39,8 @@ Your work must:
 
 ## Portfolio Samples
 
-Check out portfolios that look awesome and emulate the parts that speak to you. Here are some that we like but you should google around and find stuff you're into.
-
- - [denisechandler.com](http://www.denisechandler.com/)
-
- - [mattfarely.ca](http://mattfarley.ca/)
-
- - [sebkay.com](http://sebkay.com/)
-
- - [imdev.in](https://imdev.in/)
- 
- ### Previous SEI Students
-
- - [helloaileen.com](http://helloaileen.com)
- 
- - [eloise-ress-barrow.surge.sh/](http://eloise-ress-barrow.surge.sh/#writing)
-
- - [lianapenn.com](https://www.lianapenn.com/)
- 
- - [robertdiscipio.surge.sh/](http://robertdiscipio.surge.sh/)
- 
- - [andrewhollingworth.com/](http://andrewhollingworth.com/)
- 
- - [jessicalandzberg.github.io/](https://jessicalandzberg.github.io/Unit_1_Project/#myJourney0)
- 
- - [ga profiles](https://profiles.generalassemb.ly/profiles)
-
+- []()
+- []()
 
 ### Finding Good Portfolio Sites To Emulate - 10 min
 
