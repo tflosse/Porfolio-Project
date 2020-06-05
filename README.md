@@ -1,6 +1,7 @@
 # Portfolio Project
 First attempt at creating a single-page portfolio.
-Below are the Project Guidelines as provided by GA.
+
+## Below are the Project Guidelines as provided by GA:
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Unit 1 Project Build A Portfolio Site
 
@@ -38,7 +39,7 @@ Your work must:
 
 ## Portfolio Samples
 
-Check out portfoliios that look awesome and emulate the parts that speak to you. Here are some that we like but you should google around and find stuff you're into.
+Check out portfolios that look awesome and emulate the parts that speak to you. Here are some that we like but you should google around and find stuff you're into.
 
  - [denisechandler.com](http://www.denisechandler.com/)
 

@@ -133,3 +133,8 @@ function reverse(string) {
  ### Example:
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
 **RESOLUTION**: Missing comma after first object in sources {} object
+
+**ERROR**:Tamaras-MBP:portfolio-project tflosse$ git push origin master
+Missing or invalid credentials.
+Missing pipe
+**RESOLUTION**:
