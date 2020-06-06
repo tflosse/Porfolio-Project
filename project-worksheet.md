@@ -13,6 +13,8 @@
 |Day 6| Present | Incomplete
 
 > *Nav. bar and Footer positioning & commit to git: Fashion Blog
+> Change images: Flex image gallery exercise
+> Create side-by-side with mockups
 > JS functions: Lapis, Papyrus, Scalpellus
 > Add git social previews: ALL git projects
 > Finish responsive core structure: Lagoon Template
