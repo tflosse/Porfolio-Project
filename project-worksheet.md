@@ -18,6 +18,7 @@
 > JS functions: Lapis, Papyrus, Scalpellus
 > Add git social previews: ALL git projects
 > Finish responsive core structure: Lagoon Template
+> Create limit on number of cards that can be generated: Yoga Cards
 
 ## Project Description
 
@@ -132,11 +133,20 @@ function reverse(string) {
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
- ### Example:
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
-
 **ERROR**:Tamaras-MBP:portfolio-project tflosse$ git push origin master
 Missing or invalid credentials.
 Missing pipe
-**RESOLUTION**:
+**RESOLUTION**: Git local and remote repos needed to be merged in order to properly push commits to git. Used git push -v after many attempts to use git pull.
+
+**ERROR**:                               
+**RESOLUTION**: 
+
+## Portfolio Samples (as outlined in README)
+
+Link To Site  | One Thing I'd Like To Incorporate | Initial Research On That Item
+| ------------- | ------------- | ------------- |
+| [Ximena Vengoechea](http://www.ximenavengoechea.com/) | Simplicity and personality of drawings |
+| [Eloise Ress-Barrow](http://eloise-ress-barrow.surge.sh/index.html) | Simplicity |
+| [Juan Ramirez](https://whoisjuan.me/) | Numerous Animation, but might be too colorful and slightly overwhelming |
+| [Devon Stank](https://www.devonstank.com/) | Engaging, crisp, clearly definied sections, clean outline |
+| [Liana Penn](https://www.lianapenn.com/) | Header Animation and responsiveness. did not like the project previews as much|

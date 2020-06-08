@@ -29,7 +29,7 @@ Bonuses:
     - Date, time, and "Total Coding Hours"
 
 
-## Planning Ahead: Guideliens for Self
+## Planning Ahead: Guidelines for Self
 
 The planning:
 - Benefit from an early start on getting organized:

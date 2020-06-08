@@ -37,20 +37,18 @@ Your work must:
 - An in-class demo of the site that shows off the interactions you worked on.
 - A mobile nav that expands and collapses when a user clicks on the hamburger icon.
 
-## Portfolio Samples
-
-- []()
-- []()
-
 ### Finding Good Portfolio Sites To Emulate - 10 min
 
 Search and compare at least 3 profile web sites.  Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site. 
 
 Link To Site  | One Thing I'd Like To Incorporate | Initial Research On That Item
 | ------------- | ------------- | ------------- |
-| [http://www.denisechandler.com/](http://www.denisechandler.com/)| initial animation\drawing on page load
-|[jkeohan.com](jkeohan.com) | mouseover on a project triggers animations |
-| [http://mattfarley.ca/](http://mattfarley.ca/) |  layout of the projects
+| [Ximena Vengoechea](http://www.ximenavengoechea.com/) | Simplicity and personality of drawings |
+| [Eloise Ress-Barrow](http://eloise-ress-barrow.surge.sh/index.html) | Simplicity |
+| [Juan Ramirez](https://whoisjuan.me/) | Numerous Animation, but might be too colorful and slightly overwhelming |
+| [Devon Stank](https://www.devonstank.com/) | Engaging, crisp, clearly definied sections, clean outline |
+| [Liana Penn](https://www.lianapenn.com/) | Header Animation and responsiveness. did not like the project previews as much|
+
 
 #### Starter Code
 

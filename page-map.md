@@ -23,7 +23,7 @@
     (added feature might be with individual letter fading in and a scribble sound)
 - Greeting disappears after 3s. and is replaced with header
 - Header: Software Developer
-- Subheader: "Built to last" (line-through 'last' - work and change fast.)
+- Subheader: "Built to last" (line-through 'last' - work and change fast)
 
 ## Builds
 
