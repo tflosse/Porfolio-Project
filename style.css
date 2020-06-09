@@ -1,6 +1,151 @@
 
 body {
-   box-sizing: border-box;
    margin: 0 auto;
 }
 
+html {
+   font-size: 12px;
+   font-family: 'Lora', serif;
+}
+
+h2, h3, h4 {
+   font-family: 'Karla', sans-serif;
+   text-align: center;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   display: inline;
+   text-decoration: none;
+   color: black;
+}
+
+header {
+   display: grid;
+   width: 100%;
+   height: 50vh;
+   grid-template-columns: 1fr 8fr;
+   grid-template-rows: 1fr;
+}
+
+.nav {
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   margin-top: 10px;
+}
+
+#header-panel{
+   background-image: url(./assets/theme/header.png);
+   background-size: 100vw;
+   background-repeat: no-repeat;
+   opacity: 0.8;
+}
+
+#hamburger {
+   font-size: 30px;
+   padding: 5px 15px;
+   position: fixed;
+   z-index: 1;
+}
+
+.dropdown-item {
+   padding: 10px 10px 10px 20px;
+   font-family: 'Fjalla One', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+}
+.about {
+   margin: 20px;
+   display: block;
+}
+
+.about p {
+   text-align: justify;
+   margin: 0 10px;
+}
+
+#my-picture {
+   width: 150px;
+}  
+#github-v {
+   width: 30px;
+   height: 30px;
+   padding: 2px 0 0 0;
+   display: inline;
+}
+#codepen-v {
+   width: 30px;
+   padding: 2px 0 0 0;
+   display: inline;
+}
+.general {
+   border: 1px solid black;
+   width: 60vw;
+   margin: 10px auto;
+}
+.reach-out {
+   border: 1px solid black;
+   width: 60vw;
+   margin: 10px auto;
+}
+.reach-out p {
+   text-align: center;
+}
+
+.job-title {
+   font-size: 1.1rem;
+   font-weight: 600;
+}
+.company {
+   font-style: italic;
+}
+
+#linkedin-v {
+   width: 30px;
+   padding: 2px 0 0 0;
+   display: inline;
+}
+/* Mobile */
+@media only screen and (max-width:767px) {
+   header {
+      grid-template-columns: 1fr;
+      width: 100%;
+   }
+   .nav, .desktop-only{
+       display: none;
+   }
+   .mobile-nav {
+       display: block;
+   }
+}
+
+/* Tablette */
+@media only screen and (min-width: 768px) {
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+   .mobile-nav {
+      display: none;
+   }
+   html {
+       font-size: 17px;
+   }
+}
+
+
+/* 
+.open .left {
+   position: fixed;
+   left: 3;
+   top: 15;
+   height: 35vh;
+   width: 50vw;
+   display: block;
+   background-color: darkslateblue;
+   padding: 20px;
+ } */

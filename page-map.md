@@ -37,6 +37,13 @@
 - Image flexbox, images grows when clicked
     (added feature might be navigation dots below the panel)
 
+## Contact Form
+
+- Text and Input boxes with placeholders
+- Submit button
+- Thank you message
+- Pop-up upon submission
+
 ## Before Software Development
 
 - Resume items as a vertical timeline in separate boxes will will:
@@ -51,13 +58,6 @@ OR
 Two buttons:
     - View on LinkedIn
     - Request a copy of my CV
-
-## Contact Form
-
-- Text and Input boxes with placeholders
-- Submit button
-- Thank you message
-- Pop-up upon submission
 
 ## Connect
 

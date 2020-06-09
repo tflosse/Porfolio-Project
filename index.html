@@ -6,53 +6,87 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Tamara's Portfolio</title>
+    <title>Call me Tam</title>
 </head>
 <body>
-    nav
-    ☵
-    About
-    What I do
-    Portfolio
-    Builds & Draws
-    Contact
-    Start a Conversation
-    Resume
-    Before Web Development
-    Connect
-    & all the links...
+    <header>
+        <div id="header-panel">
+            <button class="mobile-nav" id="hamburger">☵</button>
+        </div>
+        <ul class="nav">
+            <button class="close">X</button>
+            <li class="dropdown-item"><a href="">About</a></li>
+            <li class="dropdown-item"><a href="">Portfolio</a></li>
+            <li class="dropdown-item"><a href="">Portfolio</a></a></li>
+            <li class="dropdown-item"><a href="">Contact</a></li>
+            <li class="dropdown-item"><a href="">Resume</a></li>
+        </ul>     
+    </header>
 
-    greeting-header
-    You can call me Tam
-    Web Developer
-    Built to last - work and adapt fast
+    <div class="about">
+        <h3>Tamara Flosse</h3>
+        <h4>Web Design & Development</h4>
+        <p>I use my business development and customer acquisition experience to better understand your needs, and those of your clients and users. By writing efficient code and creating websites that bring both on-brand design and intentional user interactions. I code so you can conquer.</p>
+        <img id="my-picture" src="./assets/theme/Portrait.jpg" alt="My Picture">
+    </div>
 
-    about
-    name
-    description
-    <img src="" alt="">
+    <div class="portfolio">
+        <h3>Lastest Projects</h3>
+        <div class=project-grid>
+            <!-- Refer to JSON lab -->
+        </div>
+        <p> See more on </p>
+        <button><a href="https://github.com/tflosse"><img id="github-v" src="./assets/theme/github.svg" alt="GitHub Logo"></a></button>
+        <button><a href="https://codepen.io/tflosse"><img id="codepen-v" src="./assets/theme/codepen.svg" alt="CodePen Logo"></a></button>
+        <h4>Frames</h4>
+        <!-- Carousel goes here -->
+    </div>
 
-    projects
-    by languges
-    by type
+    <div class="contact">
+        <div class="work desktop-only">
+            <h3>Hire me</h3>
+            <!-- Form and submit button go here -->
+        </div>
+        <div class="general">
+            <h3>General Questions</h3>
+            <!-- Other form and submit button go here -->
+        </div>
+        <div class="reach-out">
+            <h3>Reach out to me directly at</h3>
+            <p>tflosse@gmail.com<br />
+                Los Angeles, CA<br />
+                +1 (310) 980-0044<br />
+                9:00 am to 6:00 pm PST
+            </p>
+            <img class="desktop-only" src="" alt="">
+        </div>
+    </div>
 
-    frames 
+    <div class="resume">
+        <h3>Resume</h3>
+        <ul>
+            <li><p><span class="job-title">Engineering Immersive</span> </h4>
+                <br /><span class="company"><a href="https://generalassemb.ly/education/software-engineering-immersive/los-angeles">General Assembly</a></span><br /> 
+                Learning the skills to build applications to develop wireframes, meet user needs, model data, and work collaboratively through version control. The 3-month immersive program helps me achieve fluency in multiple frameworks and stacks, apply essential object-oriented programming concepts, write high-quality JavaScript, and leverage JS libraries like React to build a dynamic front-end.</p></li>
+            <li><p><span class="job-title">Account Manager</span> </h4>
+                <br /><span class="company"><a href="https://www.booking.com/">Booking.com</a></span><br /> 
+                Managed a portfolio of 150+ independent hotels, identified and prioritized need-areas and conveyed important information pertaining to product releases. In this client-facing role, I used relevant data and reporting tools to strategize around pricing and availability, and gained a better understanding of some aspects of APIs and connectivity.</p></li>
+            <li><p><span class="job-title">Business Development</span>
+                <br ><span class="company"><a href="https://momentfeed.com/">MomentFeed</a></span><br />
+                Grew client-base through prospecting and building powerful case studies for content distribution that is scalable, but relevant at a local level, as well as social media and online reputation management all in one platform.</p></li>
+            <li><p><span class="job-title">Customer Acquisition</span>
+                <br ><span class="company"><a href="https://www.clutter.com/">Clutter</a></span><br />
+                Promoted from a Sales Consultant position to tackle online visibility on user-generated and owned platforms, and establish localized strategies, as the company experimented with a concept store as a customer acquisition channel. </p></li>
+        </ul>
+        <p>View on</p>
+        <button><a href="https://www.linkedin.com/in/tflosse/"><img id="linkedin-v" src="./assets/theme/linkedin-square.png" alt="LinkedIn Logo"></a></button>
+    </div>
 
-    draws
 
-    contact
-    Hire Me
-    General Questions
-    Reach Out
-
-    resume
-    Before Web Development
-    see on LinkedIn
-
-    connect
-    other icons
-
-    <script scr="app.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
 </body>
 </html>
