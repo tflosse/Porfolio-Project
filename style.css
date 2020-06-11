@@ -5,15 +5,24 @@
    box-sizing: border-box;
  }
 
+ html {
+    scroll-behavior: smooth;
+ }
+
 body {
    font-size: 14px;
    font-family: 'Lora', serif;
    text-rendering: optimizeLegibility;
+   background-color: white;
 }
 
 h2, h3, h4 {
    font-family: 'Karla', sans-serif;
    text-align: center;
+}
+
+h2 {
+   padding-bottom: 10px;
 }
 
 ul {
@@ -29,7 +38,7 @@ a {
 #header-panel{
    display: grid;
    width: 100%;
-   height: 40vh;
+   height: 100vh;
    grid-template-columns: 1fr 7fr;
    grid-template-rows: 2fr 1fr;
    background-image: url(./assets/theme/abstract-blur.jpg);
@@ -37,22 +46,28 @@ a {
    background-repeat: no-repeat;
    opacity: 0.9;
 }
- .header-text {
+.header-text {
     color: white;
     font-family: 'Homemade Apple', cursive;
-    font-size: 28px;
+    font-size: 34px;
     opacity: 0.2;
     position: relative;
-    bottom: 10px;
-    z-index: 5;
+    padding-top: 25px;
+    z-index: 2;
     grid-area: 2 / 1 / 3 / 3;
  }
 
- .nav {
-   display: block;
+#down-arrow {
+    width: 35px;
+    opacity: 0.6;
+ }
+
+.nav {
+   display: flex;
+   flex-direction: column;
    box-sizing: border-box;
    width: 100vw;
-   height: 40vh;
+   height: 100vh;
    transition: left 300ms ease;
    text-align: left;
    position: fixed;
@@ -82,7 +97,7 @@ a {
 
 
 #hamburger {
-   font-size: 26px;
+   font-size: 30px;
    padding: 10px 15px;
    position: fixed;
    z-index: 1;
@@ -95,37 +110,50 @@ a {
 .dropdown-item {
    padding: 15px 10px 15px 30px;
    font-family: 'Fjalla One', sans-serif;
-   text-transform: uppercase;
    letter-spacing: 0.2rem;
+   z-index: 10;
 }
 
 .dropdown-item:hover {
    background-color: rgba(255,255,255, 0.95);
    font-weight: 800;
-   transition: 400ms ease;
+   transition: all 400ms ease;
 }
+
+.section-description {
+   color:rgba(205,152,185, 0);
+   font-family: 'Homemade Apple', cursive;
+   text-transform: lowercase;
+   font-size: 14px;
+}
+
+.section-description:hover {
+   color:rgba(205,152,185, 0.9);
+   transition: all 300ms ease;
+   z-index: 10;
+}   
 
 .about {
    margin: 25px;
    display: grid;
-   grid-template-columns: 1.5fr 1fr;
-   grid-template-rows: 0.5fr 0.5fr 1.2fr;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 0.5fr 0.4fr 1.7fr;
 }
 
 .about h2 {
-   padding: 15px 5px 15px 5px;
+   padding: 10px 5px 15px 5px;
    grid-area: 2 / 1 / 3 / 2;
    text-shadow: 0.5px -0.5px rgba(28,26,77,0.5);
 }
 
 .about h3 {
-   padding: 40px 5px 0 5px;
+   padding: 50px 5px 0 5px;
    grid-area: 1 / 1 / 2 / 2;
    font-size: 18px;
 }
 .about p {
    text-align: justify;
-   float: left;
+   text-indent: 30px;
    padding: 10px;
    padding-top: 20px;
    grid-area: 3 / 1 / 4 / 3;
@@ -139,23 +167,112 @@ a {
    grid-area: 1 / 2 / 3 / 3;
 } 
 
+.portfolio {
+   height: 100vh;
+   padding-top: 30px;
+}
 
+.project-flexbox {
+   height: 80vh;
+   padding: 20px 10px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.project-thumbnail {
+   width: 25vw;
+   height: 20vh;
+   margin: 10px;
+   border: 1px solid black;
+   border-radius: 4px;
+}
+
+.project-image {
+   width: 100%;
+}
+
+.project-description {
+   text-align: center;
+   padding: 5px;
+   font-size: 0.7rem;
+}
+
+.portfolio p {
+   text-align: center;
+}
+
+.portfolio button, .resume button {
+   border: none;
+   border-radius: 4px;
+   background-color: transparent;
+}
+
+.portfolio button:hover {
+   transition: 400ms ease;
+   background-color: rgba(205,152,185, 0.7);
+}
 
 #github-v {
-   width: 30px;
-   height: 30px;
-   padding: 2px 0 0 0;
+   width: 40px;
+   height: 40px;
+   padding: 2px 5px;
+   margin: 0 8px;
    display: inline;
 }
 #codepen-v {
-   width: 30px;
-   padding: 2px 0 0 0;
+   width: 40px;
+   height: 40px;
+   padding: 4px 5px;
+   margin: 0 8px;
    display: inline;
 }
-.carousel-item > img {
-   width: 80vw;
-   max-width: 420px;
+
+/* .carousel {
+   position: relative;
+   margin: 0 auto;
+   width: 100vw;
+   height: 100vh;
+   border: 1px solid black;
 }
+
+.carousel-container {
+   position: relative;
+   padding: 20px;
+   background-color: rgba(175, 156, 171,0.7);
+   height: 100%;
+}
+
+.carousel-track {
+   padding: 5px;
+}
+
+.carousel-slide {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 90vw;
+}
+
+.carousel-track img {
+   width: 80vw;
+   height: 100%;
+   object-fit: scale-down;
+}
+
+.carousel-button {
+   position: absolute;
+   top: 50%;
+   transform: translateY(50%);
+   width:40px;
+   padding: 10px;
+   background-color: transparent;
+   border: none;
+}
+
+.carousel-button:hover {
+   background-color:rgba(205,152,185, 0.9);
+} */ 
 
 .contact {
    display: flex;
@@ -163,7 +280,6 @@ a {
    background-image: url(./assets/theme/pink-nebula.jpg);
    background-size: cover;
    padding:20px 0;
-   margin: 10px 0;
 }
  .contact h3 {
     padding: 10px;
@@ -172,9 +288,10 @@ a {
     text-transform: uppercase;
  }
 .contact div {
-   background-color: rgba(175, 156, 171,0.7);
+   position: relative;
+   background-color: rgba(175, 156, 171,0.4);
    border-radius: 4px;
-   border: 3px solid rgba(205,152,185, 0.9);
+   /* border: 1px solid rgba(205,152,185, 0.9); */
    width: 60vw;
    margin: 10px auto;
    padding: 10px;
@@ -187,10 +304,16 @@ a {
 }
 
 .contact input, .contact textarea {
+   font-family: 'Karla', sans-serif;
+   font-style: oblique;
    padding: 5px;
    margin: 3px;
    border: none;
    border-radius: 4px;
+}
+
+.contact textarea {
+   width: 40vw;
 }
 
 .contact button {
@@ -199,6 +322,19 @@ a {
    border-radius: 4px;
    background-color: rgba(205,152,185, 0.7);
    border: none;
+   position: absolute; 
+   bottom: 10px;
+   right: 10px;
+}
+
+.contact button:hover{
+   background-color: rgba(122,58,96,0.7);
+   color: white;
+   transition: all 300ms ease;
+}
+
+.reach-out {
+   position: relative;
 }
 
 .reach-out p {
@@ -207,19 +343,87 @@ a {
    font-size: 1.1;
 }
 
+#qr-code {
+   width: 80px;
+   border-radius: 4px;
+   position: absolute;
+   bottom: 10px;
+   right: 50%;
+   transform: translateX(50%);
+}
+
+.resume {
+   display: flex;
+   width: 90vw;
+   height: 100vh;
+   flex-direction: column;
+   margin-top: 30px;
+   margin-left: 30px;
+}
+
+.resume div {
+   margin: 10px;
+   padding: 15px;
+   border-radius: 4px;
+   background-color: rgba(205,152,185, 0.4);
+}
+
 .job-title {
    font-size: 1.1rem;
    font-weight: 600;
-}
-.company {
-   font-style: italic;
+   padding-bottom: 3px;
 }
 
-#linkedin-v {
-   width: 30px;
-   padding: 2px 0 0 0;
+.company:hover {
+   background-color: rgba(122,58,96,0.7);
+   border-radius: 4px;
+   padding: 2px 4px;
+   color: white;
+   transition: all 300ms ease;
+}
+
+.resume h5 {
+   text-align: center;
+   font-style: italic;
+   font-size: 0.8rem;
+}
+
+.resume p {
+   text-align: center;
+   padding-top: 5px;
+   line-height: 1.3;
+}
+
+.resume button:hover {
+   transition: 400ms ease;
+   background-color: rgba(205,152,185, 0.7);
+}
+
+.resume-button {
+   width: 40px;
+   padding: 5px;
    display: inline;
 }
+
+.personal {
+   padding: 20px;
+   margin-top: 15px;
+   background-image: url(./assets/theme/galaxy-arms.jpg);
+   background-size: contain;
+   color: white;
+}
+.personal p {
+   text-align: left;
+   text-indent: 30px;
+   line-height: 1.3;
+   padding: 15px;
+   padding-bottom: 20px;
+}
+
+.draws img {
+   width: 400px;
+}
+
 /* Mobile */
 @media only screen and (max-width:767px) {
    .work, #qr-code {
@@ -233,25 +437,7 @@ a {
 
 /* Desktop */
 @media only screen and (min-width: 1024px) {
-   #qr-code {
-      width: 100px;
-      border-radius: 4px;
+   .contact div {
+      width: 30vw;
    }
 }
-
-
-/* 
-.open .left {
-   position: fixed;
-   left: 3;
-   top: 15;
-   height: 35vh;
-   width: 50vw;
-   display: block;
-   background-color: darkslateblue;
-   padding: 20px;
- } */
-
- /* rgb(142,71,91) */
- /* rgb(29,50,68) */
- /* rgb(49,55,81) */

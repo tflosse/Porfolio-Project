@@ -5,6 +5,13 @@
     [Anime](https://animejs.com/documentation/#staggeringBasics)
 
 - Line animation
-    [CSS-tricks](https://css-tricks.com/svg-line-animation-works/)
+    [CSS-Tricks](https://css-tricks.com/svg-line-animation-works/)
 
--
+- SVG Symbol Use
+    [CSS-Tricks](https://css-tricks.com/change-color-of-svg-on-hover/)
+
+- How to create a Carousel
+    [Kevin Powel on YouTube](https://www.youtube.com/watch?v=VYsVOamdB0g)
+
+- Lightbox
+    [Lokesh Dakar](https://lokeshdhakar.com/projects/lightbox2/)
