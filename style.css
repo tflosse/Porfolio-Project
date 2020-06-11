@@ -137,7 +137,10 @@ a {
    image-rendering: pixelated;
    border-radius: 100px;
    grid-area: 1 / 2 / 3 / 3;
-}  
+} 
+
+
+
 #github-v {
    width: 30px;
    height: 30px;
@@ -153,23 +156,55 @@ a {
    width: 80vw;
    max-width: 420px;
 }
-.work {
-   border: 1px solid black;
+
+.contact {
+   display: flex;
+   flex-wrap: wrap;
+   background-image: url(./assets/theme/pink-nebula.jpg);
+   background-size: cover;
+   padding:20px 0;
+   margin: 10px 0;
+}
+ .contact h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+ }
+.contact div {
+   background-color: rgba(175, 156, 171,0.7);
+   border-radius: 4px;
+   border: 3px solid rgba(205,152,185, 0.9);
    width: 60vw;
    margin: 10px auto;
+   padding: 10px;
 }
-.general {
-   border: 1px solid black;
-   width: 60vw;
-   margin: 10px auto;
+
+.contact label {
+   font-family: 'Karla', sans-serif;
+   color: white;
+   font-size: 0.8rem;
 }
-.reach-out {
-   border: 1px solid black;
-   width: 60vw;
-   margin: 10px auto;
+
+.contact input, .contact textarea {
+   padding: 5px;
+   margin: 3px;
+   border: none;
+   border-radius: 4px;
 }
+
+.contact button {
+   font-family: 'Fjalla One', sans-serif;
+   padding: 5px 10px;
+   border-radius: 4px;
+   background-color: rgba(205,152,185, 0.7);
+   border: none;
+}
+
 .reach-out p {
    text-align: center;
+   color: white;
+   font-size: 1.1;
 }
 
 .job-title {
@@ -187,7 +222,9 @@ a {
 }
 /* Mobile */
 @media only screen and (max-width:767px) {
-
+   .work, #qr-code {
+      display: none;
+   }
 }
 
 /* Tablette */
@@ -196,7 +233,10 @@ a {
 
 /* Desktop */
 @media only screen and (min-width: 1024px) {
-
+   #qr-code {
+      width: 100px;
+      border-radius: 4px;
+   }
 }
 
 
