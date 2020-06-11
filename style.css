@@ -401,7 +401,8 @@ a {
 
 .resume-button {
    width: 40px;
-   padding: 5px;
+   padding: 2px 5px;
+   margin: 0 8px;
    display: inline;
 }
 
@@ -413,7 +414,7 @@ a {
    color: white;
 }
 .personal p {
-   text-align: left;
+   text-align: center;
    text-indent: 30px;
    line-height: 1.3;
    padding: 15px;
