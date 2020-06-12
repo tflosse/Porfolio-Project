@@ -46,6 +46,7 @@ a {
    background-repeat: no-repeat;
    opacity: 0.9;
 }
+
 .header-text {
     color: white;
     font-family: 'Homemade Apple', cursive;
@@ -94,6 +95,7 @@ a {
    background-color: transparent;
    border: none;
    padding: 10px;
+   -webkit-transition: ease 1s;
 }
 
 
@@ -109,13 +111,14 @@ a {
 }
 
 .dropdown-item {
-   padding: 15px 10px 15px 30px;
+   padding: 18px 10px 15px 30px;
    font-family: 'Fjalla One', sans-serif;
    letter-spacing: 0.2rem;
    z-index: 10;
+   -webkit-transition: ease 0.5s;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover, .close:hover {
    background-color: rgba(255,255,255, 0.95);
    font-weight: 800;
    transition: all 400ms ease;
@@ -126,6 +129,7 @@ a {
    font-family: 'Homemade Apple', cursive;
    text-transform: lowercase;
    font-size: 14px;
+   -webkit-transition: ease 0.5s;
 }
 
 .section-description:hover {
@@ -210,6 +214,7 @@ a {
    padding-top: 30px;
    ont-family: 'Lora', serif;
    color: transparent;
+   -webkit-transition: ease 0.5s;
 }
 
 .project-description:hover {
@@ -227,30 +232,27 @@ a {
    text-align: center;
 }
 
-.portfolio button, .resume button {
+.portfolio button, .resume-button {
+   width: 40px;
+   height: 40px;
+   padding: 6px 8px;
    border: none;
    border-radius: 4px;
    background-color: transparent;
+   margin: 0 8px;
+   display: inline;
+   -webkit-transition: ease 0.5s;
 }
 
-.portfolio button:hover {
+.portfolio button:hover, .resume button:hover {
+   width: 50px;
+   padding: 3px 4px;
    transition: 400ms ease;
    background-color: rgba(205,152,185, 0.7);
 }
 
-#github-v {
-   width: 40px;
-   height: 40px;
-   padding: 2px 5px;
-   margin: 0 8px;
-   display: inline;
-}
-#codepen-v {
-   width: 40px;
-   height: 40px;
-   padding: 4px 5px;
-   margin: 0 8px;
-   display: inline;
+.portfolio button:hover {
+   width: 45px;
 }
 
 /* .carousel {
@@ -351,6 +353,7 @@ a {
    position: absolute; 
    bottom: 10px;
    right: 10px;
+   -webkit-transition: ease 0.5s;
 }
 
 .contact button:hover{
@@ -408,18 +411,6 @@ a {
    text-align: center;
    padding-top: 5px;
    line-height: 1.3;
-}
-
-.resume button:hover {
-   transition: 400ms ease;
-   background-color: rgba(205,152,185, 0.7);
-}
-
-.resume-button {
-   width: 40px;
-   padding: 2px 5px;
-   margin: 0 8px;
-   display: inline;
 }
 
 .personal {
@@ -508,24 +499,91 @@ a {
 
 /* Desktop */
 @media only screen and (min-width: 1024px) {
-   .header-text {
-      font-size: 50px;
+   body { 
+      font-size: 16px;
+   }
+   .header-text, #hamburger {
+      font-size: 46px;
+   }
+   #down-arrow {
+      width: 45px;
+      z-index: 0;
+   }
+   #hamburger {
+      font-size: 40px;
    }
    .nav {
-      
+      z-index: 10;
+   }
+   .dropdown-item {
+      font-size: 1.3rem;
+   }
+   .close {
+      font-size: 4 rem;
+      background-color: transparent;
+      border: none;
+      padding: 15px;
+   }
+   .about {
+      display: block;
+   }
+   .about h2, .about h3, .about p {
+      position: relative;
+      margin: auto;
+   }
+   .about p {
+      width: 60vw;
+   }
+   #my-picture {
+      display: block;
+      margin: 10px auto;
+      width: 220px;
+      border-radius: 90;
+   }
+   .project-flexbox {
+      margin-bottom: 15px;
+   }
+   .project-thumbnail {
+      position: relative;
+      width: 15vw;
+      margin: 25px 30px;
+   }
+   .project-title {
+      font-size: 1.1rem;
+      position: absolute;
+      bottom: -25px;
+   }
+   .contact {
+      height: 80vh;
+      margin: 20px 0;
    }
    .contact div {
-      width: 30vw;
+      width: 27vw;
+      margin: auto;
+   }
+   .work {
+      display: inline;
    }
    .contact textarea {
-      width: 20vw;
+      width: 17vw;
+   }
+   .reach-out {
+      height: 65%;
    }
    #qr-code {
       width: 80px;
       border-radius: 4px;
       position: absolute;
-      bottom: 10px;
+      bottom: 30px;
       right: 50%;
       transform: translateX(50%);
+   }
+   .resume div {
+      width: 65vw;
+      margin: 12px auto;
+      font-size: 15px;
+   }
+   .personal p {
+      margin: 0 60px;
    }
 }

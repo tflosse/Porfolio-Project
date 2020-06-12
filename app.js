@@ -56,5 +56,4 @@ function app(projectsArr) {
     })
 }
 
-
 })
