@@ -232,7 +232,7 @@ a {
    text-align: center;
 }
 
-.portfolio button, .resume-button {
+.portfolio button, .resume button {
    width: 40px;
    height: 40px;
    padding: 6px 8px;
@@ -245,14 +245,10 @@ a {
 }
 
 .portfolio button:hover, .resume button:hover {
-   width: 50px;
+   width: 45px;
    padding: 3px 4px;
    transition: 400ms ease;
    background-color: rgba(205,152,185, 0.7);
-}
-
-.portfolio button:hover {
-   width: 45px;
 }
 
 /* .carousel {
@@ -541,7 +537,9 @@ a {
       border-radius: 90;
    }
    .project-flexbox {
+      margin: auto;
       margin-bottom: 15px;
+      width: 85vw;
    }
    .project-thumbnail {
       position: relative;
@@ -552,6 +550,12 @@ a {
       font-size: 1.1rem;
       position: absolute;
       bottom: -25px;
+   }
+   .project-title:hover {
+      text-decoration: underline;
+      text-decoration-color: rgba(205,152,185, 0.7);
+      font-size: 1.15rem;
+      transition: left 800ms ease;
    }
    .contact {
       height: 80vh;
@@ -568,13 +572,13 @@ a {
       width: 17vw;
    }
    .reach-out {
-      height: 65%;
+      height: 45vh;
    }
    #qr-code {
       width: 80px;
       border-radius: 4px;
       position: absolute;
-      bottom: 30px;
+      bottom: 25px;
       right: 50%;
       transform: translateX(50%);
    }
