@@ -81,37 +81,37 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 
 >Below are examples from the assignment description
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Design | M | 3hr | 4hr | 4hr|
-| HTML Structure | H | 1.5hr | 2hr | 2hr|
-| Content | M | 2hr | 3hr | 3hr|
-| Hamburger | H | 1hr | 2hr | 2hr|
-| Toggle Nav on Mobile | H | 2hr | 3hr | 3hr|
-| Regular Nav | L | 0.5H | 0hr | 0hr|
-| Project Previews | H | 3hr | 2hr | 2hr|
-| Working with API | H | 3hrs| 4hr | 4hr|
-| Social Media Icons | L | 1hr | 1hr | 1hr|
-| QR Code | H | 1hr | 0.5hr | 0.5hr|
-| Adding Form | H | 1.5hr| 1 hr | 1hr|
-| Carousel | M | 3hr | 5hr | 5hr|
-| Other sections and flex| M | 3hr | 4hr | 4hr|
-| Styling | M | 3hr | 5hr | 5hr|
-| Responsive | H | 3hr | 5hr | 5hr|
-| Total | H | 31.5hrs| 39.5hrs | 39.5hrs|
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time 
+| --- | :---: |  :---: | :---: | :---: 
+| Design | M | 3hr | 4hr | 4hr
+| HTML Structure | H | 1.5hr | 2hr | 2hr
+| Content | M | 2hr | 3hr | 3hr
+| Hamburger | H | 1hr | 2hr | 2hr
+| Toggle Nav on Mobile | H | 2hr | 3hr | 3hr
+| Regular Nav | L | 0.5H | 0hr | 0hr
+| Project Previews | H | 3hr | 2hr | 2hr
+| Working with API | H | 3hrs| 4hr | 4hr
+| Social Media Icons | L | 1hr | 1hr | 1hr
+| QR Code | H | 1hr | 0.5hr | 0.5hr
+| Adding Form | H | 1.5hr| 1 hr | 1hr
+| Carousel | M | 3hr | 5hr | 5hr
+| Other sections and flex| M | 3hr | 4hr | 4hr
+| Styling | M | 3hr | 5hr | 5hr
+| Responsive | H | 3hr | 5hr | 5hr
+| Total | H | 31.5hrs| 39.5hrs | 39.5hrs
 
 #### PostMVP
 
 >Below are examples from the assignment description
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time 
 | --- | :---: |  :---: | :---: | :---: |
-| Project Hover | L | 3hr | -hr | -hr|
-| Banner letters wiggle | L | 1hr | -hr | -hr|
-| Interactive Banner | M | 4hr | -hr | -hr|
-| Materialize | H | 4hr | -hr | -hr|
-| Bootstrap | H | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
-| Total | H | 20hrs| -hrs | -hrs |
+| Project Hover | L | 3hr | -hr | -hr
+| Banner letters wiggle | L | 1hr | -hr | -hr
+| Interactive Banner | M | 4hr | -hr | -hr
+| Materialize | H | 4hr | -hr | -hr
+| Bootstrap | H | 4hr | -hr | -hr
+| Make own icon | L | 4hr | -hr | -hr
+| Total | H | 20hrs| -hrs | -hrs
 
 ## Additional Libraries
  - JQuery
