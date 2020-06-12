@@ -167,6 +167,8 @@ a {
    padding: 10px;
    padding-top: 20px;
    grid-area: 3 / 1 / 4 / 3;
+   font-size: 1rem;
+
 }
 
 #my-picture {
@@ -192,7 +194,7 @@ a {
 
 .project-thumbnail {
    position: relative;
-   width: 25vw;
+   width: 30vw;
    margin: 10px;
    border: 1px solid white;
    border-radius: 4px;
@@ -460,6 +462,18 @@ a {
    }
 }
 
+/* Wider screens*/
+@media only screen and (min-width: 414px) {
+   .about {
+      grid-template-rows: 1fr 1fr 5.5fr;
+   }
+   .about h2 {
+      margin-left: 20px;
+   }
+   .about h3 {
+      margin-left: 60px;
+   }
+
 /* Tablette */
 @media only screen and (min-width: 768px) {
    .about {
@@ -547,14 +561,14 @@ a {
       margin: 25px 30px;
    }
    .project-title {
-      font-size: 1.1rem;
+      font-size: 1rem;
       position: absolute;
       bottom: -25px;
    }
    .project-title:hover {
       text-decoration: underline;
       text-decoration-color: rgba(205,152,185, 0.7);
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       transition: left 800ms ease;
    }
    .contact {
