@@ -28,6 +28,7 @@ $.ajax({
     const projects = data.feed.entry.map( project => {
         return {
             title: project.gsx$title.$t,
+            anchor: project.gsx$anchor.$t,
             image: project.gsx$image.$t,
             description: project.gsx$description.$t,
             url: project.gsx$url.$t
@@ -41,16 +42,16 @@ function app(projectsArr) {
     console.log('inside app - projectsArr', projectsArr)
     projectsArr.forEach( project => {
         let thumbnail =$('<div>').addClass('project-thumbnail')
-        let title =$('<h3>')
-        let anchorTag =$('<a>').addClass('project-anchor').attr({'href':project.image,'data-lightbox':'portfolio-previews','data-title':project.title})
+        let anchorTag =$('<a>').addClass('project-anchor').attr({'href':project.image,'data-lightbox':'portfolio-previews','data-title':project.anchor})
         let image =$('<img>').attr('src',project.image).addClass('project-image')
+        let title =$('<h3>')
         let description = $('<p>')
-        title.text(project.title)
-        anchorTag.html(image,title)
-        description.text(project.description)
+        anchorTag.html(image,title,description)
+        title.text(project.title).addClass('project-title')
+        anchorTag.append(title)
+        description.text(project.description).addClass('project-description')
         anchorTag.append(description)
-        thumbnail.append(anchorTag).addClass('project-description')
-
+        thumbnail.append(anchorTag)
         $('.project-flexbox').append(thumbnail)
     })
 }

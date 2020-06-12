@@ -174,12 +174,12 @@ a {
 } 
 
 .portfolio {
-   height: 100vh;
+   height: 100%;
    padding-top: 30px;
 }
 
 .project-flexbox {
-   height: 80vh;
+   height: 100%;
    padding: 20px 10px;
    display: flex;
    justify-content: center;
@@ -187,21 +187,40 @@ a {
 }
 
 .project-thumbnail {
+   position: relative;
    width: 25vw;
-   height: 20vh;
    margin: 10px;
-   border: 1px solid black;
+   border: 1px solid white;
    border-radius: 4px;
 }
 
 .project-image {
    width: 100%;
+   border-radius: 4px;
+   justify-content: center;
 }
 
 .project-description {
+   position: absolute;
+   bottom: 0px;
+   height: 100%;
+   border-radius: 4px;
    text-align: center;
    padding: 5px;
-   font-size: 0.7rem;
+   padding-top: 30px;
+   ont-family: 'Lora', serif;
+   color: transparent;
+}
+
+.project-description:hover {
+   color: white;
+   background: rgba(6,2,80,0.8);
+   background: linear-gradient(180deg, rgba(34,24,18,0.9) 0%, rgba(235,215,228,0.6) 70%, rgba(161,98,133,0) 100%);
+   transition: 500ms ease;
+}
+
+.project-title {
+   padding-top: 5px;
 }
 
 .portfolio p {
@@ -349,15 +368,6 @@ a {
    font-size: 1.1;
 }
 
-#qr-code {
-   width: 80px;
-   border-radius: 4px;
-   position: absolute;
-   bottom: 10px;
-   right: 50%;
-   transform: translateX(50%);
-}
-
 .resume {
    display: flex;
    width: 90vw;
@@ -426,9 +436,9 @@ a {
    padding-bottom: 20px;
 }
 
-.draws img {
+/* .draws img {
    width: 400px;
-}
+} */
 
 /* Mobile */
 @media only screen and (max-width:767px) {
@@ -445,5 +455,16 @@ a {
 @media only screen and (min-width: 1024px) {
    .contact div {
       width: 30vw;
+   }
+   .contact textarea {
+      width: 20vw;
+   }
+   #qr-code {
+      width: 80px;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 10px;
+      right: 50%;
+      transform: translateX(50%);
    }
 }

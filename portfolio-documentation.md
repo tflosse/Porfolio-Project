@@ -15,3 +15,7 @@
 
 - Lightbox
     [Lokesh Dakar](https://lokeshdhakar.com/projects/lightbox2/)
+
+- Background Gradients
+    [CSS Gradient](https://cssgradient.io/)
+
