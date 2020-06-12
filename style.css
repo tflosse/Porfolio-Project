@@ -63,7 +63,63 @@ a {
     opacity: 0.6;
  }
 
-c
+.nav {
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   width: 100vw;
+   height: 100vh;
+   transition: left 300ms ease;
+   text-align: left;
+   position: fixed;
+   top: 0;
+   left: -100vw;
+   background-color: rgba(255,255,255, 0.8);
+   padding: 20px;
+ }
+
+.open .nav {
+   left: 0;
+}
+
+.open #hamburger {
+   opacity: 0;
+   transition: 300ms ease;
+}
+
+.close {
+   text-align: left;
+   font-size: 2 rem;
+   color: rgb(49,55,81);
+   background-color: transparent;
+   border: none;
+   padding: 10px;
+}
+
+
+#hamburger {
+   font-size: 30px;
+   padding: 10px 15px;
+   position: fixed;
+   z-index: 1;
+   color: white;
+   background-color: transparent;
+   outline: 0;
+   border: 0;
+}
+
+.dropdown-item {
+   padding: 15px 10px 15px 30px;
+   font-family: 'Fjalla One', sans-serif;
+   letter-spacing: 0.2rem;
+   z-index: 10;
+}
+
+.dropdown-item:hover {
+   background-color: rgba(255,255,255, 0.95);
+   font-weight: 800;
+   transition: all 400ms ease;
+}
 
 .section-description {
    color:rgba(205,152,185, 0);
@@ -455,63 +511,9 @@ c
    .header-text {
       font-size: 50px;
    }
-   #hamburger, .close {
-      display: none;
-   }
    .nav {
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
+      
    }
-
-   /* .nav {
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-      width: 100vw;
-      height: 100vh;
-      transition: left 300ms ease;
-      text-align: left;
-      position: fixed;
-      top: 0;
-      left: -100vw;
-      background-color: rgba(255,255,255, 0.8);
-      padding: 20px;
-    }
-   
-   .close {
-      text-align: left;
-      font-size: 2 rem;
-      color: rgb(49,55,81);
-      background-color: transparent;
-      border: none;
-      padding: 10px;
-   }
-   
-   
-   #hamburger {
-      font-size: 30px;
-      padding: 10px 15px;
-      position: fixed;
-      z-index: 1;
-      color: white;
-      background-color: transparent;
-      outline: 0;
-      border: 0;
-   }
-   
-   .dropdown-item {
-      padding: 15px 10px 15px 30px;
-      font-family: 'Fjalla One', sans-serif;
-      letter-spacing: 0.2rem;
-      z-index: 10;
-   }
-   
-   .dropdown-item:hover {
-      background-color: rgba(255,255,255, 0.95);
-      font-weight: 800;
-      transition: all 400ms ease;
-   } */
    .contact div {
       width: 30vw;
    }
