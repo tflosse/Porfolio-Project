@@ -12,18 +12,16 @@
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
-> *Nav. bar and Footer positioning & commit to git: Fashion Blog
-> Change images: Flex image gallery exercise
-> Create side-by-side with mockups
 > JS functions: Lapis, Papyrus, Scalpellus
-> Add git social previews: ALL git projects
 > Finish responsive core structure: Lagoon Template
-> Create limit on number of cards that can be generated: Yoga Cards
 
 ## Project Description
 
-This Project will show case...
+This Project will make use of methods learn in Unit 1 of the SEIR Program including: HTML, CSS, JavaScript, and JQuery functionalites.
 
+### Youtube Video Link
+
+[Portfolio Site Presentation on YouTube](https://youtu.be/S67C3_wJcg0)
 
 ## Google Sheet
 
@@ -31,37 +29,19 @@ This Project will show case...
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
+> Made on OneNote using a tablet
 
-- [Mobile]() - made on OneNote using a tablet
-- [Tablet]()
-- [Desktop]()
+- [Mobile & Tablet](https://i.imgur.com/IgcLYEN.png) 
+- [Desktop](https://i.imgur.com/NfEBDvx.png)
 
-> Images and links to be added.
 
 ## Time/Priority Matrix 
 
+[Matrix Screenshot](https://i.imgur.com/XZjn6Xr.png)
 [Time-Priority in Google Sheets](https://docs.google.com/spreadsheets/d/1pwvUx73R0Y0-yDb0-0J7X0Ms6VVPs93I9sQJmoaBO4o/edit#gid=0)
 
-Full list of features that have been prioritized based on the `Time and Priority` Matix.  
-> This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  
-> The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  
-> This line will be used to estimate how much time any one feature will take to complete. 
-
-> Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  
-> This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  
-Continue to assign each feature a letter.  
-
-> Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. 
-> If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 From Project prep.:
 >   - Essential: at minimum what is required by project guidelines, 
@@ -75,13 +55,14 @@ Details in section below.
 
 #### MVP (examples)
 
-- 
 -
 -
 
 #### PostMVP 
 
-- Anything else that is not MVP
+- Add carousels for wireframe design as well as personal art and involvement
+- Add animation to the landing page
+- 
 
 ## Functional Components
 
